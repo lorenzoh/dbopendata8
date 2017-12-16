@@ -105,7 +105,7 @@ def draw_label(img, corner_ul, color, clas, score):
 def draw_n_persons(img, n_persons):
     height, width, _ = img.shape
     font = cv2.FONT_HERSHEY_COMPLEX_SMALL
-    text = f'Persons on train: {n_persons}'
+    text = f'People in view: {n_persons}'
     img = cv2.putText(img, text, (0, height - 50), font,
                       1, (255, 255, 255), 2, cv2.LINE_AA)
     return img
